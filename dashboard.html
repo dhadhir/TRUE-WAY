@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - True Way</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="True Way Logo">
+    <h3>True Way Accounting System</h3>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+    <aside>
+        <button onclick="show('users')">Users</button>
+        <button onclick="show('invoices')">Invoices</button>
+    </aside>
+
+    <main>
+
+        <!-- USERS -->
+        <section id="users">
+            <h2>User Management</h2>
+
+            <input id="uname" placeholder="Name">
+            <input id="uemail" placeholder="Email">
+            <input id="upass" placeholder="Password">
+            <select id="urole">
+                <option>accountant</option>
+                <option>operations</option>
+            </select>
+            <button onclick="addUser()">Add User</button>
+
+            <ul id="userList"></ul>
+        </section>
+
+        <!-- INVOICES -->
+        <section id="invoices" style="display:none">
+            <h2>Invoices</h2>
+
+            <input id="client" placeholder="Client Name">
+            <input id="amount" placeholder="Amount USD">
+            <button onclick="createInvoice()">Create Invoice</button>
+
+            <ul id="invoiceList"></ul>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

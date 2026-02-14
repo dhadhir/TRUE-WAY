@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="invoice">
+
+    <img src="logo.png" class="invoice-logo">
+
+    <h2>True Way Logistics Ltd</h2>
+
+    <p><b>Client:</b> <span id="client"></span></p>
+    <p><b>Amount:</b> $<span id="amount"></span></p>
+
+    <p class="thanks">Thank you for your business</p>
+
+</div>
+
+<script>
+const inv = JSON.parse(localStorage.getItem("currentInvoice"));
+document.getElementById("client").innerText = inv.client;
+document.getElementById("amount").innerText = inv.amount;
+</script>
+
+</body>
+</html>

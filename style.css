@@ -1,0 +1,82 @@
+body {
+    font-family: Arial;
+    background: #f2f8ff;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-logo {
+    height: 60px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: #2a9df4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e7bc4;
+}
+
+header {
+    background: #2a9df4;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+    background: #e8f2ff;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.invoice {
+    background: white;
+    padding: 40px;
+    width: 600px;
+    margin: auto;
+}
+
+.invoice-logo {
+    height: 80px;
+}
